@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "392837445294",
+    "project_id": "sohibjonovchi",
+    "storage_bucket": "sohibjonovchi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392837445294:android:1bdacbfc540f63f91f1f3f",
+        "android_client_info": {
+          "package_name": "com.example.ovchiadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk9tpZtAY190lo6KfcdGXO-MNnZiclaEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392837445294:android:cf3e54f91980960c1f1f3f",
+        "android_client_info": {
+          "package_name": "uz.ovchi.ovchi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk9tpZtAY190lo6KfcdGXO-MNnZiclaEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
