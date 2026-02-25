@@ -27,7 +27,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
         elevation: 4,
         shadowColor: Colors.deepPurple.shade200,
         titleSpacing: 20,
-        title: Text("Categories"),
+        title: Text("Kategoriyalar"),
       ),
       body: Consumer<AdminWebPanelProvider>(
         builder: (context, value, child) {
@@ -36,7 +36,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
           );
 
           if (categoriesList.isEmpty) {
-            return Center(child: Text("No Categories Found"));
+            return Center(child: Text("Kategoriyalar mavjud emas."));
           }
 
           return ListView.builder(

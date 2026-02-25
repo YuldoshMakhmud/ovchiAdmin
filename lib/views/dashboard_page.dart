@@ -105,7 +105,7 @@ class _DashboardPageState extends State<DashboardPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xFF0B7285),
         foregroundColor: Colors.white,
         elevation: 4,
         shadowColor: Colors.deepPurple.shade200,
@@ -116,7 +116,7 @@ class _DashboardPageState extends State<DashboardPage> {
             Icon(Icons.dashboard, size: 28, color: Colors.white),
             const SizedBox(width: 12),
             const Text(
-              "Admin Management Panel",
+              "Sohibjonning Admin WEB Paneli",
               style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
             ),
           ],
@@ -134,21 +134,21 @@ class _DashboardPageState extends State<DashboardPage> {
                 children: [
                   buildDashboardButton(
                     icon: Icons.shopping_cart,
-                    label: "Orders",
+                    label: "Buyurtmalar",
                     onTap: () => Navigator.pushNamed(context, "/orders"),
                     color: Colors.teal,
                   ),
 
                   buildDashboardButton(
                     icon: Icons.store,
-                    label: "Products",
+                    label: "Mahsulotlar",
                     onTap: () => Navigator.pushNamed(context, "/products"),
                     color: Colors.deepPurple,
                   ),
 
                   buildDashboardButton(
                     icon: Icons.local_offer,
-                    label: "Promos",
+                    label: "mahsulot reklamalari",
                     onTap: () => Navigator.pushNamed(
                       context,
                       "/promos_banners",
@@ -170,14 +170,14 @@ class _DashboardPageState extends State<DashboardPage> {
 
                   buildDashboardButton(
                     icon: Icons.category,
-                    label: "Categories",
+                    label: "Kategoriyalar",
                     onTap: () => Navigator.pushNamed(context, "/category"),
                     color: Colors.blueAccent,
                   ),
 
                   buildDashboardButton(
                     icon: Icons.card_giftcard,
-                    label: "Coupons",
+                    label: "skidkalar va cuponlar",
                     onTap: () => Navigator.pushNamed(context, "/coupons"),
                     color: Colors.green,
                   ),
@@ -205,49 +205,49 @@ class _DashboardPageState extends State<DashboardPage> {
                   children: [
                     buildTile(
                       icon: Icons.category,
-                      label: "Total Categories",
+                      label: "Barcha Kategoriyalar",
                       value: adminProvider.categoriesList.length.toString(),
                       color: Colors.blueAccent,
                     ),
 
                     buildTile(
                       icon: Icons.shopping_bag,
-                      label: "Total Products",
+                      label: "Barcha Mahsulotlar",
                       value: adminProvider.productsList.length.toString(),
                       color: Colors.deepPurple,
                     ),
 
                     buildTile(
                       icon: Icons.receipt_long,
-                      label: "Total Orders",
+                      label: "Barcha Buyurtmalar",
                       value: adminProvider.totalOrdersNum.toString(),
                       color: Colors.teal,
                     ),
 
                     buildTile(
                       icon: Icons.hourglass_bottom,
-                      label: "Order Not Shipped Yet",
+                      label: "Buyurtmalar Hali Jarayonda",
                       value: adminProvider.orderPendingProcessNum.toString(),
                       color: Colors.orange,
                     ),
 
                     buildTile(
                       icon: Icons.local_shipping,
-                      label: "Orders Shipped",
+                      label: "Buyurtmalar Yo'lda",
                       value: adminProvider.ordersOnTheWayNum.toString(),
                       color: Colors.indigo,
                     ),
 
                     buildTile(
                       icon: Icons.check_circle,
-                      label: "Orders Delivered",
+                      label: "Buyurtmalar Yetkazilgan",
                       value: adminProvider.ordersDeliveredNum.toString(),
                       color: Colors.green,
                     ),
 
                     buildTile(
                       icon: Icons.cancel,
-                      label: "Orders Cancelled",
+                      label: "Buyurtmalar Bekor Qilingan",
                       value: adminProvider.ordersCancelledNum.toString(),
                       color: Colors.redAccent,
                     ),

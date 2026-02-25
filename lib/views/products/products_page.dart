@@ -23,7 +23,7 @@ class _ProductsPageState extends State<ProductsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: const Color.fromARGB(255, 95, 183, 98),
         foregroundColor: Colors.white,
         elevation: 4,
         shadowColor: Colors.deepPurple.shade200,
@@ -214,7 +214,7 @@ class _ProductsPageState extends State<ProductsPage> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        "💲 ${product.new_price_Product.toString()}",
+                                        "${product.new_price_Product.toString()} UZS",
                                       ),
                                       Container(
                                         padding: EdgeInsets.all(4),

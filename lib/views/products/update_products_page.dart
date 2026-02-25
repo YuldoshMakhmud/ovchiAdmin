@@ -33,7 +33,9 @@ class _UpdateProductsPageState extends State<UpdateProductsPage> {
     if (formGlobalKey.currentState!.validate()) {
       final productDataMap = {
         "name": nameTextEditingController.text,
-        "old_price": int.parse(oldPriceTextEditingController.text),
+        "old_price": oldPriceTextEditingController.text.isEmpty
+            ? null
+            : int.parse(oldPriceTextEditingController.text),
         "new_price": int.parse(newPriceTextEditingController.text),
         "quantity": int.parse(quantityTextEditingController.text),
         "category": categoryTextEditingController.text,
@@ -151,7 +153,7 @@ class _UpdateProductsPageState extends State<UpdateProductsPage> {
                 children: [
                   buildTextFormField(
                     controller: nameTextEditingController,
-                    label: "Product Name",
+                    label: "Maxsulot Nomi",
                     validatorMsg: "This field cannot be empty.",
                   ),
 
@@ -159,15 +161,15 @@ class _UpdateProductsPageState extends State<UpdateProductsPage> {
 
                   buildTextFormField(
                     controller: oldPriceTextEditingController,
-                    label: "Original Price",
-                    validatorMsg: "This field cannot be empty.",
+                    label: "Eski Narxi (agar mavjud bo'lsa)",
+                    validatorMsg: '',
                   ),
 
                   SizedBox(height: 10),
 
                   buildTextFormField(
                     controller: newPriceTextEditingController,
-                    label: "Sell Price",
+                    label: "Sotish Narxi",
                     validatorMsg: "This field cannot be empty.",
                   ),
 
@@ -175,7 +177,7 @@ class _UpdateProductsPageState extends State<UpdateProductsPage> {
 
                   buildTextFormField(
                     controller: quantityTextEditingController,
-                    label: "Quantity Left",
+                    label: "Qancha Donalikda Mavjud",
                     validatorMsg: "This field cannot be empty.",
                   ),
 
@@ -190,7 +192,7 @@ class _UpdateProductsPageState extends State<UpdateProductsPage> {
 
                   buildTextFormField(
                     controller: descTextEditingController,
-                    label: "Description",
+                    label: "Maxsulot Tavsifi",
                     validatorMsg: "This field cannot be empty.",
                     maxLines: 6,
                   ),
@@ -218,7 +220,7 @@ class _UpdateProductsPageState extends State<UpdateProductsPage> {
                   ElevatedButton.icon(
                     onPressed: pickImageAndCompress,
                     icon: const Icon(Icons.image),
-                    label: const Text("Pick & Compress Image"),
+                    label: const Text("Rasm tanlab Yuklash"),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,

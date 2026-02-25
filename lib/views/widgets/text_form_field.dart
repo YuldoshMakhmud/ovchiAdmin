@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Widget buildTextFormField({
   required TextEditingController controller,
   required String label,
-  required String validatorMsg,
+  String? validatorMsg,
   bool readOnly = false,
   int maxLines = 1,
 }) {
@@ -16,9 +16,7 @@ Widget buildTextFormField({
       labelText: label,
       filled: true,
       fillColor: Colors.green.shade50,
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
     ),
   );
 }

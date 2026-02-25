@@ -57,7 +57,7 @@ class _AddUpdateCategoriesState extends State<AddUpdateCategories> {
 
       if (extension == null || !supportedFormats.contains(extension)) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Unsupported image format: .$extension")),
+          SnackBar(content: Text("Rasm formati mos emas: .$extension")),
         );
         return;
       }
@@ -128,7 +128,7 @@ class _AddUpdateCategoriesState extends State<AddUpdateCategories> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                "All will be converted to lowercase",
+                "Barcha harflar kichik bo'lishi kerak.",
                 style: TextStyle(color: Colors.grey[700]),
               ),
               SizedBox(height: 10),
@@ -147,7 +147,7 @@ class _AddUpdateCategoriesState extends State<AddUpdateCategories> {
               ),
               SizedBox(height: 20),
               Text(
-                "This will be used in ordering categories",
+                "Bu yerga kiritilgan son qanchalik kichik bo'lsa, kategoriya shunchalik yuqorida ko'rsatiladi.",
                 style: TextStyle(color: Colors.grey[700]),
               ),
               SizedBox(height: 10),
@@ -157,7 +157,7 @@ class _AddUpdateCategoriesState extends State<AddUpdateCategories> {
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   hintText: "Priority",
-                  labelText: "Priority",
+                  labelText: "Maxsulot soni bo'yicha ustuvorlik",
                   filled: true,
                   fillColor: Colors.deepPurple.shade50,
                   border: OutlineInputBorder(
