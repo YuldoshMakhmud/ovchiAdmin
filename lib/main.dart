@@ -12,6 +12,7 @@ import 'package:provider/provider.dart';
 import 'views/coupons/coupons_page.dart';
 import 'views/promoBanner/promos_banners_page.dart';
 
+//admin web panel uchun asosiy fayl, bu yerda barcha sahnalar va providerlar chaqiriladi, shuningdek firebase initialize qilinadi
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
